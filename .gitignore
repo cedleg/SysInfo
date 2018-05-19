@@ -1,0 +1,50 @@
+# Dossier de compilation
+/*/build/
+ 
+# Config Crashlitics, depends du poste de travail
+com_crashlytics_export_strings.xml
+ 
+# configuration locale (sdk path, etc)
+local.properties
+ 
+# fichier Gradle générés automatiquement
+.gradle/
+ 
+# Fichiers de signature
+.signing/
+
+#local Git
+.git/
+ 
+#build profile
+build
+
+#local optional files
+web-site-policy
+template-policy
+
+# fichier de configuration Android Studio, specifiques à un utilisateur
+.idea/libraries/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/.name
+.idea/compiler.xml
+.idea/copyright/profiles_settings.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes/scope_settings.xml
+.idea/vcs.xml
+.idea/*
+*.iml
+gradle.bat
+app/src/androidTest/
+
+# Fichier générés par l'OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

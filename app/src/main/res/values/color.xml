@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="backgroundgray">#91A3B0</color> <!-- GRIS -->
+    <color name="backgroundemail">#A7B5C0</color>
+
+    <color name="PrimaryColor">#2196F3</color>
+    <color name="PrimaryDarkColor">#1976D2</color>
+    <color name="indicator">#68efad</color>
+    <color name="actionMenuTextColor">#ffffff</color>
+    <color name="coloredition">#00FF00</color>
+
+    <color name="teal">#009688</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+</resources>

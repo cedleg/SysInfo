@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">SysInfo</string>
+    <string name="action_settings">About</string>
+
+    <string name="action_info">About</string>
+
+    <string name="activityExport_name">Export data</string>
+    <string name="activityEmail_name">Email file</string>
+    <string name="activityInfo_name">About</string>
+    <string name="dir"><![CDATA[<p><b>Directory:</b></p><p>/SDCARD/DOWNLOAD/SysInfo/nofile.txt</p>]]></string>
+    <string name="infosaveview"><![CDATA[<b>Select items to file backup</b>]]></string>
+
+    <string name="infomailview"><![CDATA[<b>Send data file by email</b>]]></string>
+    <string name="email_objet">Subject:</string>
+    <string name="email_dest">Dest:</string>
+    <string name="edit_objet">sysinfo backup</string>
+    <string name="edit_to"></string>
+    <string name="dirfilemail"><![CDATA[<p><b>P.J File:</b></p><p>/SDCARD/DOWNLOAD/SysInfo/nofile.txt</p>]]></string>
+    <string name="button_emailGo">TO SEND</string>
+
+    <string name="sys">System</string>
+    <string name="sensor">Sensor</string>
+    <string name="nfc">NFC</string>
+    <string name="screen">Display</string>
+    <string name="network">Network</string>
+    <string name="phone">Telephony</string>
+    <string name="cpumem">Cpu/Memory</string>
+    <string name="devellopement">Environment</string>
+    <string name="sauvegarde">Export to file</string>
+    <string name="rating">Rate on Playstore</string>
+    <string name="github">Get source code on Github</string>
+
+    <string name="copyright">©2018 cedleg</string>
+    <string name="license_type">Apache 2.0 license</string>
+    <string name="contact">devcodeandroid@gmail.com</string>
+
+    <string name="bar_title_about">About Sysinfp</string>
+
+    <string name="market_link">market://details</string>
+    <string name="market_link_url">https://play.google.com/store/apps/details</string>
+    <string name="github_link">https://github.com/cedleg/SysInfo</string>
+    <string name="myaddress_domain_com">myaddress@domain.com</string>
+</resources>
