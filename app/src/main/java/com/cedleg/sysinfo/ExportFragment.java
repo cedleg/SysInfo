@@ -37,10 +37,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.TextView;
-
 import java.util.List;
 
 public class ExportFragment extends Fragment {
@@ -69,22 +65,22 @@ public class ExportFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_export, container, false);
 
-        sys = (AppCompatCheckBox) rootView.findViewById(R.id.checkbox_sys);
-        sensor = (AppCompatCheckBox) rootView.findViewById(R.id.checkbox_sensor);
-        nfc = (AppCompatCheckBox) rootView.findViewById(R.id.checkbox_nfc);
-        screen = (AppCompatCheckBox) rootView.findViewById(R.id.checkbox_screen);
-        network = (AppCompatCheckBox) rootView.findViewById(R.id.checkbox_network);
-        phone = (AppCompatCheckBox) rootView.findViewById(R.id.checkbox_phone);
-        cpu = (AppCompatCheckBox) rootView.findViewById(R.id.checkbox_cpumem);
-        environment = (AppCompatCheckBox) rootView.findViewById(R.id.checkbox_environment);
+        sys = rootView.findViewById(R.id.checkbox_sys);
+        sensor = rootView.findViewById(R.id.checkbox_sensor);
+        nfc = rootView.findViewById(R.id.checkbox_nfc);
+        screen = rootView.findViewById(R.id.checkbox_screen);
+        network = rootView.findViewById(R.id.checkbox_network);
+        phone = rootView.findViewById(R.id.checkbox_phone);
+        cpu = rootView.findViewById(R.id.checkbox_cpumem);
+        environment = rootView.findViewById(R.id.checkbox_environment);
 
-        infoview = (AppCompatTextView) rootView.findViewById(R.id.infosaveview);
+        infoview = rootView.findViewById(R.id.infosaveview);
         infoview.setText(Html.fromHtml(getString(R.string.infosaveview)));
-        text = (AppCompatTextView) rootView.findViewById(R.id.directoryview);
+        text = rootView.findViewById(R.id.directoryview);
         text.setText(Html.fromHtml(getString(R.string.dir)));
         text.setText(MainActivity.getFilePatch().toString());
 
-        boutonSave = (AppCompatButton) rootView.findViewById(R.id.buttonSave);
+        boutonSave = rootView.findViewById(R.id.buttonSave);
 
         boutonSave.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {

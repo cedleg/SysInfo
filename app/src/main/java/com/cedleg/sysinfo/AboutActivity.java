@@ -30,8 +30,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 
 public class AboutActivity extends AppCompatActivity {
 
@@ -47,7 +45,7 @@ public class AboutActivity extends AppCompatActivity {
         View infoView = inflater.inflate(R.layout.activity_about, null);
         setContentView(infoView);
 
-        toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.my_toolbar);
+        toolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(toolbar);
         actionBar = getSupportActionBar();
         // Show the Up button in the action bar.
@@ -55,9 +53,9 @@ public class AboutActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setTitle(getResources().getString(R.string.bar_title_about));
 
-        AppCompatTextView versionView = (AppCompatTextView) infoView.findViewById(R.id.versionview);
-        AppCompatTextView aboutView = (AppCompatTextView) infoView.findViewById(R.id.aboutview);
-        AppCompatButton rateButton = (AppCompatButton) infoView.findViewById(R.id.rate_button);
+        AppCompatTextView versionView = infoView.findViewById(R.id.versionview);
+        AppCompatTextView aboutView = infoView.findViewById(R.id.aboutview);
+        AppCompatButton rateButton = infoView.findViewById(R.id.rate_button);
         rateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,7 +63,7 @@ public class AboutActivity extends AppCompatActivity {
             }
         });
 
-        AppCompatButton githubButton = (AppCompatButton) infoView.findViewById(R.id.github_button);
+        AppCompatButton githubButton = infoView.findViewById(R.id.github_button);
         githubButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

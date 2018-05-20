@@ -28,9 +28,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
 public class EmailFragment extends Fragment {
 
@@ -48,18 +45,18 @@ public class EmailFragment extends Fragment {
 
 		View rootView = inflater.inflate(R.layout.fragment_email, container, false);
 
-		  infoview = (AppCompatTextView) rootView.findViewById(R.id.infomailview);
+		  infoview = rootView.findViewById(R.id.infomailview);
 		  infoview.setText(Html.fromHtml(getString(R.string.infomailview)));
 
-		  deliver = (AppCompatEditText) rootView.findViewById(R.id.edit_to);
+		  deliver = rootView.findViewById(R.id.edit_to);
 
-		  objet = (AppCompatEditText) rootView.findViewById(R.id.edit_objet);
+		  objet = rootView.findViewById(R.id.edit_objet);
 		  
-		  fileview = (AppCompatTextView) rootView.findViewById(R.id.dirfilemail);
+		  fileview = rootView.findViewById(R.id.dirfilemail);
 		  fileview.setText(Html.fromHtml(getString(R.string.dirfilemail)));
 		  fileview.setText(MainActivity.FILEPATCH);
 		  
-		  send = (AppCompatButton) rootView.findViewById(R.id.button_emailGo);
+		  send = rootView.findViewById(R.id.button_emailGo);
 		  send.setOnClickListener(new OnClickListener(){
 			   public void onClick(View v) {
 				   
