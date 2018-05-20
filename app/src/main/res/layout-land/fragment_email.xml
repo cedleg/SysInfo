@@ -3,13 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    <LinearLayout
+    <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp">
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/infomailview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -17,18 +17,18 @@
             android:gravity="center"
             android:text="@string/infomailview"/>
 
-        <LinearLayout
+        <android.support.v7.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_gravity="center_vertical">
 
-            <LinearLayout
+            <android.support.v7.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <TextView
+                <android.support.v7.widget.AppCompatTextView
                     android:id="@+id/email_dest"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <EditText
+                    <android.support.v7.widget.AppCompatEditText
                         android:id="@+id/edit_to"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -53,14 +53,14 @@
                         android:inputType="textWebEmailAddress"
                         android:text="" />
                 </android.support.design.widget.TextInputLayout>
-            </LinearLayout>
+            </android.support.v7.widget.LinearLayoutCompat>
 
-            <LinearLayout
+            <android.support.v7.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal" >
 
-                <TextView
+                <android.support.v7.widget.AppCompatTextView
                     android:id="@+id/email_objet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <EditText
+                    <android.support.v7.widget.AppCompatEditText
                         android:id="@+id/edit_objet"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -85,15 +85,15 @@
                         android:inputType="textEmailSubject"
                         android:text="" />
                 </android.support.design.widget.TextInputLayout>
-            </LinearLayout>
+            </android.support.v7.widget.LinearLayoutCompat>
 
-        </LinearLayout>
+        </android.support.v7.widget.LinearLayoutCompat>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
-            <TextView
+            <android.support.v7.widget.AppCompatTextView
                 android:id="@+id/dirfilemail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
                 android:gravity="center"
                 android:contentDescription="@string/dirfilemail"
                 android:text="@string/dirfilemail" />
-            <Button
+            <android.support.v7.widget.AppCompatButton
                 android:id="@+id/button_emailGo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -112,5 +112,5 @@
                 android:layout_alignParentBottom="true" />
         </RelativeLayout>
 
-    </LinearLayout>
+    </android.support.v7.widget.LinearLayoutCompat>
 </ScrollView>

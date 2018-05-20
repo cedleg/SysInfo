@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <include layout="@layout/layout_toolbar"/>
 
 
-    <LinearLayout
+    <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -29,7 +29,7 @@
             android:padding="10dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
 
-        <Button
+        <android.support.v7.widget.AppCompatButton
             android:id="@+id/rate_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             android:text="@string/rating"
             android:layout_margin="10dp"/>
 
-        <Button
+        <android.support.v7.widget.AppCompatButton
             android:id="@+id/github_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             android:foreground="?android:attr/selectableItemBackground"
             android:text="@string/github"
             android:layout_margin="10dp"/>
-    </LinearLayout>
+    </android.support.v7.widget.LinearLayoutCompat>
 
 
-</LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

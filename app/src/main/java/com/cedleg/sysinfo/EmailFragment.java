@@ -20,6 +20,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.AppCompatButton;
+import android.support.v7.widget.AppCompatEditText;
+import android.support.v7.widget.AppCompatTextView;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,9 +34,9 @@ import android.widget.TextView;
 
 public class EmailFragment extends Fragment {
 
-	private EditText objet, deliver;
-	private TextView infoview, fileview;
-	private Button send;
+	private AppCompatEditText objet, deliver;
+	private AppCompatTextView infoview, fileview;
+	private AppCompatButton send;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -45,18 +48,18 @@ public class EmailFragment extends Fragment {
 
 		View rootView = inflater.inflate(R.layout.fragment_email, container, false);
 
-		  infoview = (TextView) rootView.findViewById(R.id.infomailview);
+		  infoview = (AppCompatTextView) rootView.findViewById(R.id.infomailview);
 		  infoview.setText(Html.fromHtml(getString(R.string.infomailview)));
 
-		  deliver = (EditText) rootView.findViewById(R.id.edit_to);
+		  deliver = (AppCompatEditText) rootView.findViewById(R.id.edit_to);
 
-		  objet = (EditText) rootView.findViewById(R.id.edit_objet);
+		  objet = (AppCompatEditText) rootView.findViewById(R.id.edit_objet);
 		  
-		  fileview = (TextView) rootView.findViewById(R.id.dirfilemail);
+		  fileview = (AppCompatTextView) rootView.findViewById(R.id.dirfilemail);
 		  fileview.setText(Html.fromHtml(getString(R.string.dirfilemail)));
 		  fileview.setText(MainActivity.FILEPATCH);
 		  
-		  send = (Button) rootView.findViewById(R.id.button_emailGo);
+		  send = (AppCompatButton) rootView.findViewById(R.id.button_emailGo);
 		  send.setOnClickListener(new OnClickListener(){
 			   public void onClick(View v) {
 				   

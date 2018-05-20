@@ -16,6 +16,8 @@
 
 package com.cedleg.sysinfo;
 
+import android.support.v7.widget.AppCompatImageView;
+import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
@@ -23,16 +25,15 @@ import android.widget.TextView;
 
 public class MyViewHolder extends RecyclerView.ViewHolder{
 
-    private TextView cardTitleView;
-    private TextView textViewView;
-    private ImageView imageView;
+    private AppCompatTextView cardTitleView, textViewView;
+    private AppCompatImageView imageView;
 
     //Item representation
     public MyViewHolder(View itemView) {
         super(itemView);
-        cardTitleView = (TextView) itemView.findViewById(R.id.cardtitle);
-        textViewView = (TextView) itemView.findViewById(R.id.text);
-        imageView = (ImageView) itemView.findViewById(R.id.image);
+        cardTitleView = (AppCompatTextView) itemView.findViewById(R.id.cardtitle);
+        textViewView = (AppCompatTextView) itemView.findViewById(R.id.text);
+        imageView = (AppCompatImageView) itemView.findViewById(R.id.image);
     }
 
     //bind data from MyObject

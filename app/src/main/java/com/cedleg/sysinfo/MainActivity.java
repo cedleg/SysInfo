@@ -33,6 +33,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -97,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
             tab.setCustomView(pagerAdapter.getTabView(i));
         }
 
-        //Initiate fragment and listener
+        //Initiate fragment and list
         bfrag = new DataFragment();
         efrag = new ExportFragment();
         bfrag.setListChangeListener(new DataFragment.ListChangeListener() {
@@ -196,7 +197,7 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
 
         public View getTabView(int position) {
             View tab = LayoutInflater.from(MainActivity.this).inflate(R.layout.custom_tab, null);
-            TextView tv = (TextView) tab.findViewById(R.id.custom_text);
+            AppCompatTextView tv = (AppCompatTextView) tab.findViewById(R.id.custom_text);
             tv.setText(tabTitles[position]);
             return tab;
         }

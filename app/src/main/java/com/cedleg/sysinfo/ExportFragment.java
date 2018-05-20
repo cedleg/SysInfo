@@ -29,6 +29,9 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.widget.AppCompatButton;
+import android.support.v7.widget.AppCompatCheckBox;
+import android.support.v7.widget.AppCompatTextView;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,9 +45,9 @@ import java.util.List;
 
 public class ExportFragment extends Fragment {
 
-    CheckBox sys, sensor, nfc, screen, network, phone, cpu, environment;
-    TextView infoview, text;
-    Button boutonSave;
+    AppCompatCheckBox sys, sensor, nfc, screen, network, phone, cpu, environment;
+    AppCompatTextView infoview, text;
+    AppCompatButton boutonSave;
 
     String finalstr = "Android System Informations\nExport:";
     private List<String> liststr;
@@ -66,22 +69,22 @@ public class ExportFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_export, container, false);
 
-        sys = (CheckBox) rootView.findViewById(R.id.checkbox_sys);
-        sensor = (CheckBox) rootView.findViewById(R.id.checkbox_sensor);
-        nfc = (CheckBox) rootView.findViewById(R.id.checkbox_nfc);
-        screen = (CheckBox) rootView.findViewById(R.id.checkbox_screen);
-        network = (CheckBox) rootView.findViewById(R.id.checkbox_network);
-        phone = (CheckBox) rootView.findViewById(R.id.checkbox_phone);
-        cpu = (CheckBox) rootView.findViewById(R.id.checkbox_cpumem);
-        environment = (CheckBox) rootView.findViewById(R.id.checkbox_environment);
+        sys = (AppCompatCheckBox) rootView.findViewById(R.id.checkbox_sys);
+        sensor = (AppCompatCheckBox) rootView.findViewById(R.id.checkbox_sensor);
+        nfc = (AppCompatCheckBox) rootView.findViewById(R.id.checkbox_nfc);
+        screen = (AppCompatCheckBox) rootView.findViewById(R.id.checkbox_screen);
+        network = (AppCompatCheckBox) rootView.findViewById(R.id.checkbox_network);
+        phone = (AppCompatCheckBox) rootView.findViewById(R.id.checkbox_phone);
+        cpu = (AppCompatCheckBox) rootView.findViewById(R.id.checkbox_cpumem);
+        environment = (AppCompatCheckBox) rootView.findViewById(R.id.checkbox_environment);
 
-        infoview = (TextView) rootView.findViewById(R.id.infosaveview);
+        infoview = (AppCompatTextView) rootView.findViewById(R.id.infosaveview);
         infoview.setText(Html.fromHtml(getString(R.string.infosaveview)));
-        text = (TextView) rootView.findViewById(R.id.directoryview);
+        text = (AppCompatTextView) rootView.findViewById(R.id.directoryview);
         text.setText(Html.fromHtml(getString(R.string.dir)));
         text.setText(MainActivity.getFilePatch().toString());
 
-        boutonSave = (Button) rootView.findViewById(R.id.buttonSave);
+        boutonSave = (AppCompatButton) rootView.findViewById(R.id.buttonSave);
 
         boutonSave.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {

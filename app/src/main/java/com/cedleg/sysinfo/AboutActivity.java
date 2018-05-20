@@ -24,6 +24,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
@@ -56,7 +57,7 @@ public class AboutActivity extends AppCompatActivity {
 
         AppCompatTextView versionView = (AppCompatTextView) infoView.findViewById(R.id.versionview);
         AppCompatTextView aboutView = (AppCompatTextView) infoView.findViewById(R.id.aboutview);
-        Button rateButton = (Button) infoView.findViewById(R.id.rate_button);
+        AppCompatButton rateButton = (AppCompatButton) infoView.findViewById(R.id.rate_button);
         rateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,7 +65,7 @@ public class AboutActivity extends AppCompatActivity {
             }
         });
 
-        Button githubButton = (Button) infoView.findViewById(R.id.github_button);
+        AppCompatButton githubButton = (AppCompatButton) infoView.findViewById(R.id.github_button);
         githubButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

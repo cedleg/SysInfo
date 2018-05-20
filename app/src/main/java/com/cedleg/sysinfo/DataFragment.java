@@ -52,8 +52,8 @@ public class DataFragment extends Fragment {
     private List<MyObject> cards = new ArrayList<>();
     private NfcAdapter mNfcAdapter = null;
 
-    protected String SYSTEMSTR, SENSORSTR, NFCSTR, NETWORKSTR, SCREENSTR, PHONESTR, DEVSTR, CPUSTR;
-    protected List<String> list;
+    private String SYSTEMSTR, SENSORSTR, NFCSTR, NETWORKSTR, SCREENSTR, PHONESTR, DEVSTR, CPUSTR;
+    private List<String> list;
 
     //Identifier name of file backup
     public static String DEVICEMODEL = getDeviceModel();

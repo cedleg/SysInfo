@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
 
-    <TextView
+    <android.support.v7.widget.AppCompatTextView
        	android:id="@+id/infosaveview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,60 +15,60 @@
         android:gravity="center"
         android:text="@string/infosaveview"/>
 
-    <LinearLayout
+    <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center">
-    <CheckBox android:id="@+id/checkbox_sys"
+    <android.support.v7.widget.AppCompatCheckBox android:id="@+id/checkbox_sys"
         android:checked="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
         android:text="@string/sys"/>
-    <CheckBox android:id="@+id/checkbox_sensor"
+    <android.support.v7.widget.AppCompatCheckBox android:id="@+id/checkbox_sensor"
         android:checked="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sensor"/>
-    <CheckBox android:id="@+id/checkbox_nfc"
+    <android.support.v7.widget.AppCompatCheckBox android:id="@+id/checkbox_nfc"
         android:checked="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nfc"/>
-    <CheckBox android:id="@+id/checkbox_screen"
+    <android.support.v7.widget.AppCompatCheckBox android:id="@+id/checkbox_screen"
         android:checked="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/screen"/>
-    <CheckBox android:id="@+id/checkbox_network"
+    <android.support.v7.widget.AppCompatCheckBox android:id="@+id/checkbox_network"
         android:checked="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/network"/>
-    <CheckBox android:id="@+id/checkbox_phone"
+    <android.support.v7.widget.AppCompatCheckBox android:id="@+id/checkbox_phone"
         android:checked="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/phone"/>
-    <CheckBox android:id="@+id/checkbox_cpumem"
+    <android.support.v7.widget.AppCompatCheckBox android:id="@+id/checkbox_cpumem"
         android:checked="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cpumem"/>
-    <CheckBox android:id="@+id/checkbox_environment"
+    <android.support.v7.widget.AppCompatCheckBox android:id="@+id/checkbox_environment"
         android:checked="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/devellopement"/>
-    </LinearLayout>
+    </android.support.v7.widget.LinearLayoutCompat>
 
 
 	<RelativeLayout
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent" >
 	    
-	    <TextView
+	    <android.support.v7.widget.AppCompatTextView
         		android:id="@+id/directoryview"
         		android:layout_width="match_parent"
         		android:layout_height="match_parent"
@@ -77,7 +77,7 @@
         		android:gravity="center"
         		android:text="@string/dir"/>
 	    
-	    <Button android:id="@+id/buttonSave"
+	    <android.support.v7.widget.AppCompatButton android:id="@+id/buttonSave"
 				android:background="@drawable/button_border"
 				android:foreground="?android:attr/selectableItemBackground"
 	            android:layout_width="match_parent"
@@ -86,4 +86,4 @@
 	        	android:text="@string/sauvegarde"
 	        	android:layout_alignParentBottom="true" />
 	</RelativeLayout>
-</LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>
